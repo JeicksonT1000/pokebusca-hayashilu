@@ -1,0 +1,26 @@
+
+  <div class="esquerda">
+  <p>Exibindo {{contador}} de {{this.pokemonListService.contagemPokemon}}</p>
+  </div>
+  <div class="pokemon-list">
+  <div>
+  </div>
+    <app-pokemon-card
+    *ngFor="let pokemon of pokemonListService.allPokemons | paginate: { itemsPerPage: contador, currentPage: pag }"
+    [pokemon]="pokemon.name"
+    [numero]="ajusteNumeroPokemon(pokemon.url)"
+      class="nome"></app-pokemon-card>
+    <div class="borda">
+      <br/>
+      <br/>
+		<pagination-controls 
+		(pageChange)="pag 
+		= $event" 
+		previousLabel="Anterior"
+		nextLabel="Próximo"></pagination-controls>
+     <br/>   
+     <br/>
+		</div>
+  </div>
+
+  

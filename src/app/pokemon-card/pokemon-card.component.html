@@ -1,0 +1,16 @@
+<div class="pokemon-card">
+    <div class="esquerda">
+    <mat-slide-toggle (change)="isShiny($event)">Versão Shiny</mat-slide-toggle>
+    <img [src]="pegarImagemPokemon()" />
+    </div>  
+    <div>
+    <div class="nome">
+    <b>{{ pokemon }} - # {{this.numero}}</b>
+    </div>
+    <br/>
+    <b>Características do pokemon dolor sit amet, consectetur adipiscing elit. In ultricies nunc at odio tempor tincidunt. Sed sit amet dolor velit. Donec convallis tellus ut porta molestie. Suspendisse condimentum et dui in aliquam.</b>
+    </div>
+</div>
+
+
+  

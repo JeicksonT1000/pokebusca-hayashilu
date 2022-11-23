@@ -1,0 +1,21 @@
+.pokemon-list
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nome::first-letter {
+    text-transform: uppercase;
+  }
+
+.esquerda{
+    text-align: left !important;
+}
+
+.borda{
+    border-top: 40px;
+    border-bottom: 40px;
+}
